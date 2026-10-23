@@ -1,0 +1,12 @@
+{
+  "name": "ci",
+  "steps": [
+    {"id": "checkout", "run": "examples.demo_steps:checkout"},
+    {"id": "install", "run": "examples.demo_steps:install", "deps": ["checkout"], "timeout": 30},
+    {"id": "unit", "run": "examples.demo_steps:test_unit", "deps": ["install"], "retries": 1},
+    {"id": "integration", "run": "examples.demo_steps:test_integration", "deps": ["install"]},
+    {"id": "build", "run": "examples.demo_steps:build", "deps": ["unit", "integration"]},
+    {"id": "deploy", "run": "examples.demo_steps:deploy", "deps": ["build"], "on_error": "skip_downstream"},
+    {"id": "notify", "run": "examples.demo_steps:notify", "deps": ["deploy"], "when": "deploy"}
+  ]
+}

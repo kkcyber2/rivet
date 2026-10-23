@@ -1,0 +1,23 @@
+{
+  "name": "rivet",
+  "version": "1.0.0",
+  "description": "Visual automation workflow builder that compiles a node graph to a DAG and executes it with retries, timeouts and live logs.",
+  "license": "MIT",
+  "author": {
+    "name": "KK (Conan Sultan Khan)",
+    "email": "kkdev9715@gmail.com",
+    "url": "https://github.com/kkcyber2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkcyber2/rivet.git"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
