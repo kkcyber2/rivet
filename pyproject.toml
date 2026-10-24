@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rivet"
+version = "1.0.0"
+description = "Automation workflow engine that compiles a node graph to a DAG and runs it with retries, timeouts and per-step failure policies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Konain Sultan Khan (KK)", email = "kkdev9715@gmail.com"}]
+keywords = ["automation", "workflow", "dag", "orchestration", "retry"]
+
+[project.urls]
+Homepage = "https://github.com/kkcyber2/rivet"
+Repository = "https://github.com/kkcyber2/rivet"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+rivet = "rivet.cli:main"
+
+[tool.setuptools]
+packages = ["rivet"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
