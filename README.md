@@ -4,7 +4,7 @@ A workflow engine you can read in an afternoon. Real DAG validation, real retrie
 
 Most "workflow engines" are either a `for` loop with a JSON config or a 40,000-line platform. This is the middle: a small library that gets the semantics right, with tests that prove each one.
 
-**KK (Conan Sultan Khan)** · [github.com/kkcyber2](https://github.com/kkcyber2) · kkdev9715@gmail.com
+**Konain Sultan Khan (KK)** · [github.com/kkcyber2](https://github.com/kkcyber2) · kkdev9715@gmail.com
 
 ## Run it
 

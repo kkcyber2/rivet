@@ -4,7 +4,7 @@
   "description": "Visual automation workflow builder that compiles a node graph to a DAG and executes it with retries, timeouts and live logs.",
   "license": "MIT",
   "author": {
-    "name": "KK (Conan Sultan Khan)",
+    "name": "Konain Sultan Khan (KK)",
     "email": "kkdev9715@gmail.com",
     "url": "https://github.com/kkcyber2"
   },
